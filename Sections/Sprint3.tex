@@ -1,17 +1,88 @@
 \section{Sprint 3}
 
-% week one: This week we have established P-control in our test rig and established bluetooth communication. Design wise, there has been generated concepts for fixed pitch. Design plan of variable pitch quadcopter is under way. We also need to order the last components needed. We have also investigated several flight controller options. This includes planning our own setup as well as looking into the possibility of modifying ArduPilotMega or other existing platforms.
+During sprint 3, four variable pitch mechanisms was assembled with Align T-rex 500 RC helicopter tail mechanisms and motors borrowed from HSN. 
 
+\begin{figure}[h]
+        \centering
+         \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/BeforeAssembly.jpg}
+              \caption{Variable Pitch Parts}
+            \label{fig:testpic2}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width = 0.7\textwidth]{VAPIQ-PICTURES/AfterAssemblyVPQ.jpg}
+            \caption{Variable Pitch Assembly}
+            \label{fig:testpic3}
+        \end{minipage}
+\end{figure}
+
+We mounted motors from 3dRobotics with 700 KV straight under the mechanism and added symmetric airfoils capable of generating equal amounts of thrust in each direction. The mechanisms function and rotation worked perfectly, but each full assembly with motors, ESC`s, propellers, servos, servo mounts, linkage rods and carbon tubes weighed approximately 250 g. Which for four mechanisms adds up to 1 kg. To build a sufficiently functioning quadcopter thrust to weight should be at least 2:1 as a rule of thumb. Since this is a custom build, it was hard to estimate what lift we could achieve with this motor-propeller assembly theoretically, and the group therefore built a simple thrust test rig which could measure the actual thrust produced. 
+
+\begin{figure}[h]
+        \centering
+         \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/VPQtestRig}
+              \caption{Thrust Test Rig}
+            \label{fig:testpic2}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/VpMechanism}
+            \caption{Variable Pitch Assembly With Servo}
+            \label{fig:testpic3}
+        \end{minipage}
+\end{figure}
+
+
+The measured thrust of the motors was approximately 500 g with 3 cell battery voltage and 750 g with four cell voltage. But with four cell voltage and max speed, the motors started to overheat and consumed alot of power 18,6 Amps. On the basis of this information it is not very plausible that this motor- mechanism combination would yield enough lift for this copter, based on the mass budget.
+
+In sprint 3, the group established P-control in one axis in our test rig and established and bluetooth communication with Qualisys. Design wise, there has been generated concepts for fixed pitch. A new design plan for the variable pitch quadcopter had to be made. We also investigated several flight controller options. This includes planning our own setup as well as looking into the possibility of modifying ArduPilotMega or other existing platforms. The biggest problem of using existing flight controllers is the shear amount of code and interdependencies, and the fact that no open-source controller on the market has functionality that supports variable pitch. 
+
+\newpage
+\subsection{Completion and Scope Change, Sprint 3}
+
+We have completed 78\% of the planned tasks and had a scope change of 16\%.
+
+Project plan status, sprint 3:
+
+
+\begin{itemize}
+\item Plan Research Paper, \textbf{Started}
+\item Mechanical Design Plan, Variabel Pitch, \textbf{Started}
+\item Basic Controller, Fixed Pitch, \textbf{Started}
+\item Motor Control System, Fixed Pitch, \textbf{Started}
+\item Flight Testing And Control, \textbf{Started}
+\item Mathematical Model, Variable Pitch, \textbf{Postponed}
+\item Electrical Schematic, Fixed Pitch, \textbf{Done}
+\item Electrical Schematic, Variabe Pitch, \textbf{Done}
+	\end{itemize}
+
+
+\begin{figure}[h]
+        \centering
+        \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/BDSprint3}
+        \caption{Sprint 3}
+        \\[2.0 cm]
+    \end{figure}
+  
 \begin{comment}
-The past week, four variable pitch assemblies has been made with trex-500 tails. We hoped that we would
-have more progress by now, but things have taken time. However we’ve almost finished the first version
-of a basic flight controller. We have achieved communication with qualisys to the off-board computer.
-We’ve almost finished the computation to find the angles roll, pitch and yaw. We’ve achieved communication
-between the off-board and on-board flight controller. The on-board chip will receive these angles
-and run the inner control loop for stabilization at these set-points. Our aim is to have this finished as
-soon as possible, so we can start testing the code. Additionally, a document describing the mathematics
-of fixed pitch quadcopters has been made, and variable pitch mathematics is underway.
-We have completed 78% of the total tasks and we have had 16% scope change. We plan to improve
-this for the next sprint.
 
-\end{comment}
+\subsection{Results and Conclusions}
+    
+    
+    
+\subsection{Challenges}
+
+
+
+
+\subsection{Lessons Learned}
+
+\end{comment}    
+
+
+
+
+
+
